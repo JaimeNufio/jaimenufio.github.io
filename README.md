@@ -22,3 +22,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## deploy
+https://learnvue.co/tutorials/deploy-vue-to-github-pages#step-3-run-git-add-dist-git-commit-m-adding-dist-subtree
