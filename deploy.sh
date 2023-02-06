@@ -3,6 +3,8 @@ yarn build
 
 cd dist
 
+echo "jaimenuf.io" > CNAME
+
 git init
 git add -A
 git commit -m 'Deployment 🎉'
