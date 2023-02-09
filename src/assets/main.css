@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'UbuntuMono';
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local('UbuntuMono'), 
+    url("fonts/UbuntuMono/UbuntuMono-Regular.ttf") format('truetype')
+    /* url("fonts/UbuntuMono/UbuntuMono-Bold.ttf") format('truetype'),
+    url("fonts/UbuntuMono/UbuntuMono-Italic.ttf") format('truetype'),
+    url("fonts/UbuntuMono/UbuntuMono-BoldItalic.ttf") format('truetype') */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local('Montserrat'), 
+    url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype') 
+}
+
+
+@font-face {
+    font-family: 'Heebo';
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local('Heebo'), 
+    url("fonts/Heebo/Heebo-VariableFont_wght.ttf") format('truetype') 
+}
+
+@font-face {
+    font-family: 'Mada';
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local('Mada'), 
+    url("fonts/Mada/Mada-Regular.ttf") format('truetype') 
+}
+
+.ubuntu{
+    font-family: 'UbuntuMono' !important;
+    font-weight: 500;
+}
+
+.montserrat{
+    font-family: 'Montserrat' !important;
+    font-weight: 700;
+}
+
+.mada{
+    font-family: 'mada' !important;
+    font-weight: 800;
+}
+
+.heebo{
+    font-family: 'Heebo' !important;
+    font-weight: 500;
+}
+
+.h-slice{
+    width: 100%;
+    min-height: 500px;
+}

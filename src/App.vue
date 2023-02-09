@@ -14,15 +14,7 @@ export default{
 }
 </script>
 
-<style>
-
-@font-face {
-    font-family: 'Ubuntu_Mono';
-    src: local('fonts/UbunutuMono-Regular'),
-    url(@/assets/fonts/UbuntuMono-Regular.ttf) format('truetype');
-    font-style: normal;
-}
-
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

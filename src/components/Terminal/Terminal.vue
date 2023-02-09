@@ -6,13 +6,13 @@
         >
         <div class="header d-flex justify-content-between">
             <span class="ps-3 pt-1"> {{ title }}</span>
-            <div class="d-flex pt-1 pe-2"> 
+            <div class="d-flex pt-2 pe-2"> 
                 <span class="dot" :style="{background:'#FF5E57'}"></span>
                 <span class="dot" :style="{background:'#FEBC2E'}"></span>
                 <span class="dot" :style="{background:'#28C840'}"></span>
             </div>
         </div>
-        <div class="terminal-body" 
+        <div class="terminal-body ubuntu" 
         :style="{'color':textColor}">
             <slot name="content"/>
         </div>
@@ -30,9 +30,6 @@ props:['title','color','textColor']
 
 <style scoped>
 
-*{
-    font-family: 'Ubuntu_Mono';
-}
 
 .terminal-bg{
     /* background-color: rgba(200,100,50,.5); */
