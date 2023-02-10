@@ -7,7 +7,8 @@ echo "jaimenuf.io" > CNAME
 
 git init
 git add -A
-git commit -m 'Deployment 🎉 [$(date +%F)]'
+date=$(date +%m/%d/%Y\ %H\:%M)
+git commit -m "Deployment 🎉 [${date}]"
 git push -f git@github.com:jaimenufio/jaimenufio.github.io.git master:gh-pages
 
 cd ..
