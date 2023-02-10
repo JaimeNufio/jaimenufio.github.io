@@ -5,7 +5,9 @@
             }"
         >
         <div class="header d-flex justify-content-between">
-            <span class="ps-3 pt-1"> {{ title }}</span>
+            <span class="ps-3 pt-1">
+                <slot name="header"/>
+            </span>
             <div class="d-flex pt-2 pe-2"> 
                 <span class="dot" :style="{background:'#FF5E57'}"></span>
                 <span class="dot" :style="{background:'#FEBC2E'}"></span>
@@ -36,6 +38,8 @@ props:['title','color','textColor']
     min-height: 200px;
     min-width: 200px;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px rgba(32, 32, 32,.4);
 }
 
 .terminal-body{
@@ -46,7 +50,7 @@ props:['title','color','textColor']
 
 .terminal-bg .header{
     background-color: rgb(43, 43, 43);
-    border-radius: 5px 5px 0px 0px;
+    /* border-radius: 20px 20px 0px 0px; */
     color: white;
     text-align: left;
     padding: 5px 0px 5px 0px;

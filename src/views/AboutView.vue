@@ -1,57 +1,68 @@
 <template>
-
-<div class="h-slice hero p-5">
-  <div class="container"> 
-
-    <div class="row">
-      <div class="mx-auto col-12 col-md-3">
-        <img  class="py-3" :style="{width:'100%'}" src="@/assets/images/icon.gif"/>
+  <div class="h-slice hero p-5">
+    <div class="container"> 
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 d-flex align-items-center">
+          <img  class="py-3 circle" :style="{width:'100%'}" src="@/assets/images/icon.gif"/>
+        </div>
+        <div class="col-12 col-md-9  d-flex align-items-center">
+          <div class="hero-text ">
+            <div class="sub-title mada">
+              Hello, my name is
+            </div>
+            <div class="main-title title montserrat"> 
+              JAIME NUFIO
+            </div>
+            <div class="sub-title mada">
+              I'm a software developer.
+            </div>
+            <div class="text heebo pt-2">
+              Welcome to my corner of the internet.<br/>
+              Feel free to look around and see what I've worked on.
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-text col-12 col-md-9">
-        <div class=" title montserrat"> 
-          Hello World!
-        </div>
-
-        <div class="sub-title mada">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-
-        <div class="text heebo">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ab debitis minima facilis, eum dolorem veniam nemo dolores, itaque quidem magni beatae alias possimus impedit accusamus mollitia cumque! Quas, facilis.
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
-
-  <div class="">
-
-
-
-    <Terminal 
-      title="Hello World "
-      color="rgba(250,100,0,.75)"
-      textColor="white">
-      <template #content>Nufio@FooBar: $_</template>
-    </Terminal>
-
+    </div>  
   </div>
+
+  <Skills/>
+  <WorkExperience/>
+
+  <!-- <div class="h-slice"></div> -->
 </template>
 
 <script>
-import Terminal from "@/components/Terminal/Terminal.vue"
+import WorkExperience from "@/components/ResumeParts/WorkExperience.vue"
+import Skills from "@/components/ResumeParts/Skills.vue"
+
 
 export default{
 components:{
-  Terminal
+  WorkExperience,
+  Skills
 }
 }
 </script>
 
 <style>
+
+.h-slice{
+ padding: 20px;
+ padding-bottom: 20px;
+ /* min-height: 50vh; */
+}
+
+.main-title{
+  font-size: 8vb !important;
+  line-height: 10vh;
+  word-wrap: normal;
+}
+
 .title{
-  font-size: 4em;
+  font-size: 5vb;
   text-align: left;
+  /* line-height: 5vb; */
 }
 
 .sub-title{
@@ -65,11 +76,26 @@ components:{
 }
 
 .hero{
-background-color: rgb(0, 0, 0);
- color: white;
+background-color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
  min-height: 15vh !important; 
 }
 
+.hero-text{
+  text-align: center;
+}
+
+.flip{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.circle{
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:3px !important;
+
+}
 
 /* Mobile modifiers */
 @media (max-width: 575.98px) { 

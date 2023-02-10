@@ -1,0 +1,174 @@
+<template>
+<div class="h-slice"> 
+    <div class="container">
+        <div class="title montserrat text-wrap text-break pb-4">Skills</div>
+
+        <div class="container row ">
+            
+            <div class="col-12 col-md-6">
+                <!-- Section Title -->
+                <div class="d-flex ">    
+                <div class="pt-1">
+                    <box-icon size="md" name='terminal' color="#ffffff"></box-icon>
+                </div>  
+                <div class="b-5 ps-2 sub-title mada">Languages</div>
+            </div>
+            <!-- Language List -->
+            <div class="d-flex pt-3 gap-2 flex-wrap justify-content-left pb-5 ps-0">
+                <div class="d-flex">
+                    <box-icon size="md" type='logo' name='javascript' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">Javascript</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" type='logo' name='python' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">Python</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" name='data' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">SQL</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" name='terminal' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">Bash</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" type='logo' name='html5' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">HTML/CSS</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" type='logo' name='java' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">Java</div>
+                </div>
+                <div class="d-flex ">
+                    <box-icon size="md" type='logo' name='c-plus-plus' color="#ffffff"></box-icon>
+                    <div class="pt-2 ps-2 text heebo">C++</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <!-- Section Title -->
+                <div class="d-flex ">    
+                    <div class="pt-1">
+                        <box-icon size="md" name='bulb' color="#ffffff"></box-icon>
+                    </div>  
+                    <div class="b-5 ps-2 sub-title mada">Technologies</div>
+                </div>
+                <!-- Section List -->
+                <div class="d-flex pt-3 gap-2 flex-wrap justify-content-left pb-5 ps-3">
+                    <div class="d-flex">
+                        <box-icon size="md" type='logo' name='github' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Github</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" type='logo' name='nodejs' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">NodeJs</div>
+                    </div>
+                    <div class="d-flex">
+                        <box-icon size="md" type='logo' name='docker' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Docker</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" type='logo' name='aws' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">AWS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6">
+                <!-- Section Title -->
+                <div class="d-flex ">    
+                    <div class="pt-1">
+                        <box-icon size="md" name='bulb' color="#ffffff"></box-icon>
+                    </div>  
+                    <div class="b-5 ps-2 sub-title mada">Frameworks</div>
+                </div>
+
+                <div class="d-flex p-5 pt-3 gap-3 flex-wrap justify-content-left pb-5 ps-3">
+                    <div class="d-flex ">
+                        <box-icon size="md" type='logo' name='vuejs' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Vue</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" type='logo' name='react' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">React</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="d-flex ">    
+                    <div class="pt-1">
+                        <box-icon size="md" name='bulb' color="#ffffff"></box-icon>
+                    </div>  
+                    <div class="b-5 ps-2 sub-title mada">Data Science</div>
+                </div>
+
+                <div class="d-flex p-5 pt-3 gap-3 flex-wrap justify-content-left pb-5 ps-3">
+                    <div class="d-flex">
+                        <box-icon size="md" type='logo' name='postgresql' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">PostGresDB</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" name='git-repo-forked' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Kafka</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" type='logo' name='firebase' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Firebase</div>
+                    </div>
+                    <div class="d-flex ">
+                        <box-icon size="md" name='bar-chart' color="#ffffff"></box-icon>
+                        <div class="pt-2 ps-2 text heebo">Splunk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <box-icon size="md" type='logo' name='python' color="#ffffff"></box-icon>
+
+        <box-icon size="md" type='logo' name='postgresql' color="#ffffff"></box-icon>
+        <box-icon size="md" type='solid' name='data' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='docker' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='aws' color="#ffffff"></box-icon>
+        <box-icon size="md"  name='terminal' color="#ffffff"></box-icon>
+        <box-icon size="md"  name='table' color="#ffffff"></box-icon>
+        <box-icon name='bar-chart' type='solid' ></box-icon> 
+        <box-icon size="md" type='logo' name='nodejs' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='vuejs' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='bootstrap' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='firebase' color="#ffffff"></box-icon>
+        <box-icon size="md" type='logo' name='c-plus-plus' color="#ffffff"></box-icon>
+                -->
+
+    </div>
+</div>
+</template>
+
+<script>
+</script>
+
+<style scoped>
+
+*{
+    color:white;
+}
+
+box-icon{
+    color:white;
+    opacity: 1;
+}
+
+.h-slice{
+    background-color: rgb(27, 27, 27);
+}
+
+.heebo{
+    font-weight: 400;
+}
+
+.mada{
+    font-weight: 300;
+}
+
+</style>
