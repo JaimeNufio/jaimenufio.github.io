@@ -24,7 +24,20 @@
 <script>
 export default {
 
-props:['title','color','textColor']
+props:{    
+    title:{
+        type:String,
+        default:'Hello World'
+    },
+    color:{
+        type:String,
+        default: 'red',
+    },
+    textColor:{
+        type:String,
+        color:'white'
+    }
+}
 
 
 }
@@ -38,7 +51,7 @@ props:['title','color','textColor']
     min-height: 200px;
     min-width: 200px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden !important;
     box-shadow: 10px 10px 5px rgba(32, 32, 32,.4);
 }
 

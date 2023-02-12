@@ -1,3 +1,13 @@
+:root{
+    --first-dark: #16213E;
+    --second-dark: #0F3460;
+    --third-dark: #533483;
+    --accent: #E94560;
+    --accent-dark: #312936;
+  }
+  
+
+
 @font-face {
     font-family: 'UbuntuMono';
     /* font-weight: 400; */
@@ -57,6 +67,7 @@
 }
 
 .h-slice{
-    width: 100%;
-    min-height: 500px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
+

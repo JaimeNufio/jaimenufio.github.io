@@ -2,10 +2,16 @@
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">JaimeNuf.io</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <!-- <i class='bx bx-menu'  :style="{color:red}"></i> -->
-      <box-icon name='menu' color="white" ></box-icon>
+    <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation"
+    >
+      <box-icon name='menu-alt-right' color="white" ></box-icon>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -89,6 +95,10 @@ export default{
 <style >
 *{
     text-decoration: none !important;
+}
+
+nav.navbar.bg-dark{
+    background-color: var(--accent-dark) !important;
 }
 
 .navbar-nav .nav-link{

@@ -1,7 +1,7 @@
 <template>
-  <div class="h-slice hero p-5">
+  <div class="h-slice hero p-5 jumbo">
     <div class="container"> 
-      <div class="row justify-content-center">
+      <div class="row justify-content-between">
         <div class="col-12 col-md-3 d-flex align-items-center">
           <img  class="py-3 circle" :style="{width:'100%'}" src="@/assets/images/icon.gif"/>
         </div>
@@ -26,8 +26,38 @@
     </div>  
   </div>
 
-  <Skills/>
+
+
+
+  <SkewedDivider
+    colorTop="var(--first-dark)"
+    colorBottom="var(--second-dark)"
+    :styleNum="2"
+    >
+    <template #content> 
+      <div class="container row mx-auto px-5"> 
+        <div class="col-12 col-md-8">
+          <div class=" montserrat title px-5 pb-4">About Me</div>
+            <div class="heebo text px-5 pb-3">
+            <p>I'm a 25 year old software engineer, current frontend developer and aspiring data scientist. </p>
+            <p>I'm a self-starter software hobbyist turned developer looking to learn and work on new bleeding edge technologies on the frontier of computing. Currently pursuing a Masters in Data Science at NJIT in hopes of entering a big data role.</p>
+            <p>In my free time I like to tinker with programming, and this page will hopefully serve to show off what I've been making.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex align-items-center">
+          <div class="mx-auto" 
+          :style="{'transform': 'rotateZ(6deg)',
+           'background':'var(--third-dark)',
+            'padding':'15px 25px'}">
+            <img  class="py-3" :style="{width:'100%','transform':'rotate(-8deg)'}" src="@/assets/images/jaime.jpg"/>
+          </div>
+        </div>
+      </div>
+    </template>
+  </SkewedDivider>
   <WorkExperience/>
+  <Education/>
+  <Skills/>
 
   <!-- <div class="h-slice"></div> -->
 </template>
@@ -35,22 +65,30 @@
 <script>
 import WorkExperience from "@/components/ResumeParts/WorkExperience.vue"
 import Skills from "@/components/ResumeParts/Skills.vue"
-
+import Education from "@/components/ResumeParts/Education.vue";
+import SkewedDivider from "@/components/Util/SkewedDivider.vue";
 
 export default{
-components:{
-  WorkExperience,
-  Skills
+  components:{
+    WorkExperience,
+    Skills,
+    Education,
+    SkewedDivider,
 }
 }
 </script>
 
 <style>
 
-.h-slice{
- padding: 20px;
- padding-bottom: 20px;
- /* min-height: 50vh; */
+.jumbo{
+  padding: 20px;
+  padding-bottom: 20px;
+  background-color: var(--first-dark) !important;
+}
+
+.sub-title,.title,.text{
+  /* filter:invert(1) */
+  color: white;
 }
 
 .main-title{
