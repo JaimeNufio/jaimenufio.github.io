@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '../views/AboutView.vue'
 import ResumeView from '../views/ResumeView.vue'
-import CodeView from '../views/CodeView.vue'
+import ProjectsView from '../views/ProjectsView.vue'
 import PetsView from '../views/PetsView.vue'
 import DemosView from '../views/DemosView.vue'
 
@@ -18,9 +18,9 @@ const routes = [
     component: ResumeView
   },
   {
-    path: '/code',
-    name: 'code',
-    component: CodeView
+    path: '/projects',
+    name: 'projects',
+    component: ProjectsView
   },
   {
     path: '/pets',

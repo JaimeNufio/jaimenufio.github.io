@@ -14,9 +14,9 @@
           <div class="sub-title mada">Quick glance at experience and skills. I encourage you to look at my projects too!</div>
         
           <div class="d-flex pt-3 flex-row-reverse">
-            <div>
-              <button class="btn btn-primary">To Projects</button>
-            </div>
+            <RouterLink :to="{name:'projects'}" class=""> 
+              <button class="btn btn-primary" >To Projects</button>
+            </RouterLink>
           </div>
           
         </div>

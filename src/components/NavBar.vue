@@ -65,20 +65,20 @@ export default{
 
                 },
                 {
-                    name:'code',
+                    name:'projects',
                     title: 'Projects',
                     icon: 'terminal'
                 },
-                {
-                    name:'demos',
-                    title: 'Demos',
-                    icon: 'flask'
-                },
-                {
-                    name:'pets',
-                    title: 'Pets',
-                    icon: 'cat'
-                },
+                // {
+                //     name:'demos',
+                //     title: 'Demos',
+                //     icon: 'flask'
+                // },
+                // {
+                //     name:'pets',
+                //     title: 'Pets',
+                //     icon: 'cat'
+                // },
             ]
         }
     },

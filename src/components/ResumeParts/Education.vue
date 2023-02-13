@@ -7,7 +7,7 @@
         colorBottom="var(--third-dark)"
     >
         <template #content> 
-            <div class="container px-3 degrees">
+            <div class="container px-3 pb-5 degrees">
             <div class="pb-2">
                 <div class="title montserrat">Education</div>
                 <!-- <div class="sub-title mada">You can click on the cards to see some of the classes I took.</div> -->
