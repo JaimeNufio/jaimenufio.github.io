@@ -59,7 +59,7 @@ export default{
                     icon: 'user'
                 },
                 {
-                    name:'home',
+                    name:'resume',
                     title: 'Resume',
                     icon: 'spreadsheet'
 
@@ -98,7 +98,7 @@ export default{
 }
 
 nav.navbar.bg-dark{
-    background-color: var(--accent-dark) !important;
+    background-color: var(--off-black) !important;
 }
 
 .navbar-nav .nav-link{
@@ -106,6 +106,12 @@ nav.navbar.bg-dark{
     vertical-align: middle;
     padding: 10px 0px;
     /* margin-left: auto; */
+}
+
+.navbar{
+    z-index:5;
+    position:absolute;
+    width: 100%;
 }
 
 box-icon.h-15{

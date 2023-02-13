@@ -1,13 +1,16 @@
 <template>
   <div class="h-slice">
-    <div class="container">
+
+    <div class="container px-3">
       <div class="section-title "> 
-          <div class=" title montserrat text-wrap text-break"> 
-              My Work Experience
+
+          <div class="pb-4 text-wrap text-break">
+                <div class="title montserrat">Work Experience</div>
+                <!-- <div class="sub-title mada">Working in the Industry since 2020.</div> -->
             </div>
         </div>
-      <div class="row d-flex py-5"> 
-        <div class="col-12 col-md-4     d-flex flex-column justify-content-center">
+      <div class="row d-flex py-3 px-3"> 
+        <div class="col-12 col-md-4 d-flex flex-column justify-content-start">
           <div class="row flex-column justify-items-center py-3">
           <div class="col-12 col-lg-12">
             <img src="@/assets/images/advisr.png"/>
@@ -45,8 +48,8 @@ campaign data (client objective, target audience, geo, flight dates, total budge
         </Terminal>
         </div>
       </div>
-      <div class="row d-flex pb-5"> 
-        <div class="col-12 col-md-4      d-flex flex-column justify-content-center">
+      <div class="row d-flex py-3 px-3"> 
+        <div class="col-12 col-md-4 d-flex flex-column justify-content-start">
           <div class="row flex-column justify-items-center py-3">
           <div class="col-12 col-lg-12">
             <img :style="{'width':'200px',}" src="@/assets/images/adp.png"/>
@@ -85,90 +88,15 @@ campaign data (client objective, target audience, geo, flight dates, total budge
     </div>
 
 
-    <!-- <div class="h-slice" :style="{'background-color':'var(--first-dark)'}">
-    <div class="container" > 
-      <div class="row terminal-content">
-        <div class="col-12 col-md-6"> 
-          <FlipTerminal
-          >
-            <template #headerFront></template>
-            <template #contentFront>
-              <div class="text-center terminal-content">
-                <div >
-                  <img src="@/assets/images/advisr.png"/>
-                </div>
-                <div >
-                  <span class="sub-title mada">
-                    Advisr, Inc<br/>
-                  </span>
-                  <span class="text heebo">
-                    New York City, NY <br/>
-                    Feb 2022 - Present
-                  </span>
-                </div>
-              </div>  
-            </template>
-            <template #headerBack>BBB</template>
-            <template #contentBack>
-              <div class="terminal-content">
-                <ul>
-                  <li>Monitor Production environment and wrote dashboards using <span class="bold-adp">Splunk</span>.</li>
-                  <li>Revamping long-term storage solution for daily performance logs into a <span class="bold-adp">Grafana</span>/<span class="bold-adp">InfluxDB</span> stack.</li>
-                  <li>Assisting the team maintain the CD/CI pipeline at ADP through deployments and automation tools such as
-                    <span class="bold-adp">Jenkins</span>, and <span class="bold-adp">Docker</span>.</li>
-                  <li>Developing test scripts for testing in <span class="bold-adp">VuGen</span> to be run in <span class="bold-adp">LoadRunner</span>.</li>
-                </ul>
-              </div>
-            </template>
-        </FlipTerminal>
-      </div>
-        <div class="col-12 col-md-6">
-          <FlipTerminal forceHeight="500px">
-            <template #headerFront></template>
-            <template #contentFront>
-              <div class="text-center terminal-content">
-                <div >
-                  <img src="@/assets/images/advisr.png"/>
-                </div>
-                <div >
-                  <span class="sub-title mada">
-                    Advisr, Inc<br/>
-                  </span>
-                  <span class="text heebo">
-                    New York City, NY <br/>
-                    Feb 2022 - Present
-                  </span>
-                </div>
-              </div>
-            </template>
-            <template #headerBack>BBB</template>
-            <template #contentBack>
-              <div class="terminal-content">
-                <ul>
-                  <li>Monitor Production environment and wrote dashboards using <span class="bold-adp">Splunk</span>.</li>
-                  <li>Revamping long-term storage solution for daily performance logs into a <span class="bold-adp">Grafana</span>/<span class="bold-adp">InfluxDB</span> stack.</li>
-                  <li>Assisting the team maintain the CD/CI pipeline at ADP through deployments and automation tools such as
-                    <span class="bold-adp">Jenkins</span>, and <span class="bold-adp">Docker</span>.</li>
-                  <li>Developing test scripts for testing in <span class="bold-adp">VuGen</span> to be run in <span class="bold-adp">LoadRunner</span>.</li>
-                </ul>
-              </div>
-            </template>
-          </FlipTerminal>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
 import Terminal from "@/components/Terminal/Terminal.vue"
-// import FlipTerminal from "../Terminal/FlipTerminal.vue";
 
 export default{
 components:{
-  Terminal,
-  // FlipTerminal
+    Terminal
 }
 }
 </script>
@@ -177,6 +105,10 @@ components:{
 
 *{
     color: white
+}
+
+.h-slice{
+  padding-top: 0px;
 }
 
 .row .terminal-content{
@@ -204,6 +136,11 @@ components:{
 }
 
 .sub-title{
-    font-weight: 900 !important;
+    font-weight: 500 !important;
 }
+
+.sub-title{
+    font-size: 1.3em;
+}
+
 </style>

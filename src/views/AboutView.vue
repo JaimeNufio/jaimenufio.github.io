@@ -14,7 +14,7 @@
               JAIME NUFIO
             </div>
             <div class="sub-title mada">
-              I'm a software developer.
+              And I make things.
             </div>
             <div class="text heebo pt-2">
               Welcome to my corner of the internet.<br/>
@@ -36,15 +36,15 @@
     >
     <template #content> 
       <div class="container row mx-auto px-5"> 
-        <div class="col-12 col-md-8">
-          <div class=" montserrat title px-5 pb-4">About Me</div>
-            <div class="heebo text px-5 pb-3">
+        <div class="col-12 col-md-8 pb-5">
+          <div class=" montserrat title">About Me</div>
+            <div class="heebo text p-3">
             <p>I'm a 25 year old software engineer, current frontend developer and aspiring data scientist. </p>
             <p>I'm a self-starter software hobbyist turned developer looking to learn and work on new bleeding edge technologies on the frontier of computing. Currently pursuing a Masters in Data Science at NJIT in hopes of entering a big data role.</p>
-            <p>In my free time I like to tinker with programming, and this page will hopefully serve to show off what I've been making.</p>
+            <p>In my free time I like to tinker with software and hardware, and this page will hopefully serve a platform to show off what I've been making.</p>
           </div>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center">
+        <div class="col-12 col-md-4 d-flex align-items-center p">
           <div class="mx-auto" 
           :style="{'transform': 'rotateZ(6deg)',
            'background':'var(--third-dark)',
@@ -55,24 +55,16 @@
       </div>
     </template>
   </SkewedDivider>
-  <WorkExperience/>
-  <Education/>
-  <Skills/>
 
   <!-- <div class="h-slice"></div> -->
 </template>
 
 <script>
-import WorkExperience from "@/components/ResumeParts/WorkExperience.vue"
-import Skills from "@/components/ResumeParts/Skills.vue"
-import Education from "@/components/ResumeParts/Education.vue";
+
 import SkewedDivider from "@/components/Util/SkewedDivider.vue";
 
 export default{
   components:{
-    WorkExperience,
-    Skills,
-    Education,
     SkewedDivider,
 }
 }
